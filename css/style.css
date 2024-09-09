@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  overflow: hidden;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  animation: ease-out;
+  color: #ffffff;
+}
+
+button {
+  background-color: #ff0000;
+  border: #000000 5px solid;
+  border-radius: 2.3em;
+  color: #ffffff;
+  text-align: center;
+  height: 4em;
+  width: 12em;
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5em;
+  margin-bottom: 120px;
+}
+
+.game-over {
+  z-index: 1;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+input {
+  background-color: #ff0000;
+  border: #000000 5px solid;
+  border-radius: 2.3em;
+  color: #ffffff;
+  text-align: center;
+  height: 4em;
+  width: 12em;
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5em;
+}
+
+.game-over h2 {
+  font-size: 28px;
+  color: #fff;
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  margin-bottom: 120px;
+}
+
+.game-board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 40em;
+  border-bottom: 0.75em solid #2db32d;
+  margin: 0 auto;
+  position: absolute;
+  background: linear-gradient(#03b7ff, #a9d4e6, #ffffff);
+}
+
+.rings {
+  position: absolute;
+  bottom: 0.6em;
+  width: 5.5em;
+  animation: ring-animation infinite linear 1.5s;
+  animation-play-state: paused;
+}
+
+.sonic {
+  width: 12.5em;
+  position: absolute;
+  bottom: -0.44em;
+  left: 0.5em;
+  animation-play-state: paused;
+}
+
+.jump {
+  animation: jump normal 500ms ease-out;
+  animation-play-state: paused;
+}
+
+@keyframes ring-animation {
+  from {
+    right: -8.13em;
+  }
+  to {
+    right: 100%;
+  }
+}
+
+@keyframes jump {
+  0% {
+    bottom: 0;
+  }
+
+  40% {
+    bottom: 13.7em;
+  }
+
+  50% {
+    bottom: 13.7em;
+  }
+
+  60% {
+    bottom: 13.7em;
+  }
+
+  100% {
+    bottom: 0;
+  }
+}
+
+.clouds {
+  width: 21.88em;
+  position: absolute;
+  margin-top: 0.35em;
+  animation: clouds-animation 12s infinite linear;
+  animation-play-state: paused;
+}
+
+@keyframes clouds-animation {
+  from {
+    right: -28.13em;
+  }
+  to {
+    right: 100%;
+  }
+}
+
+.nuvens {
+  width: 20em;
+  position: absolute;
+  margin-top: 7em;
+  animation: nuvens-animation 17s infinite linear;
+  animation-play-state: paused;
+}
+
+@keyframes nuvens-animation {
+  from {
+    right: -32.5em;
+  }
+  to {
+    right: 100%;
+  }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./img/icon-sega.png" type="image/png" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/script.js" defer></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+    </style>
+    <style>
+      body {
+        background-color: #603c09;
+      }
+    </style>
+    <title>Sonic Running</title>
+  </head>
+
+  <style>
+    body {
+      margin: 0 auto;
+    }
+  </style>
+
+  <body>
+    <audio src="./audio/final-game.mp3" id="final-game"></audio>
+    <audio src="./audio/lose.mp3" id="musicLose"></audio>
+    <audio
+      class="background-sound"
+      loop=""
+      id="backgroundMusic"
+      src="./audio/Green-hill-zone.mp3"
+    ></audio>
+
+    <div class="game-board">
+      <h1>
+        Olá viajante, <br />
+        preparado para o desafio?
+      </h1>
+      <button id="btnStart">INICIAR!</button>
+      <img src="./img/nuvens.png" class="nuvens" />
+      <img src="./img/clouds.png" class="clouds" />
+      <img src="./img/rings-sonic.gif" class="rings" />
+      <img src="./img/sonic-correndo.gif" class="sonic" />
+
+      <div class="game-over">
+        <h2>Que pena, você morreu! <br />Vamos tentar novamente?</h2>
+        <input type="button" value="REVIVER" id="btnReload" />
+      </div>
+    </div>
+  </body>
+</html>
